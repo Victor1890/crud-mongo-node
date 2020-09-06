@@ -1,0 +1,37 @@
+{
+  "name": "crud-mongo-node",
+  "version": "1.0.0",
+  "description": "Simple CRUD with Node Js and MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Victor1890/crud-mongo-node.git"
+  },
+  "keywords": [
+    "node",
+    "mongo",
+    "mongodb",
+    "crud",
+    "js"
+  ],
+  "author": "Victor Rosario <victorrosariodeveloper@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Victor1890/crud-mongo-node/issues"
+  },
+  "homepage": "https://github.com/Victor1890/crud-mongo-node#readme",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.3",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.4"
+  }
+}

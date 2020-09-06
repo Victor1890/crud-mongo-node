@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD NodeJs - MongoDB</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark mb-4">
+      <a href="/" class="navbar-brand">CRUD mongo</a>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <!--FORM-->
+        <div class="col-md-5 offset-md-3">
+          <div class="card">
+            <div class="card-body">
+              <form action="/edit/<%= tasks._id %>" method="post">
+                <div class="form-group">
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="title"
+                    placeholder="Title"
+                    value="<%= tasks.title %>"
+                  />
+                </div>
+                <div class="form-group">
+                  <textarea
+                    class="form-control"
+                    name="description"
+                    cols="80"
+                    placeholder="Add a Description"
+                  >
+<%= tasks.description %></textarea
+                  >
+                </div>
+                <button class="btn btn-primary" type="submit">Update</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
